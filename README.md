@@ -47,7 +47,20 @@ BabyCC/
 
 ## 快速開始 (Quick Start)
 
-### 1. 編譯與安裝 Android App
+### 1. 直接下載安裝 APK（GitHub Releases）
+
+* **系統需求**：Android 8.0（API 26）或以上版本
+* **下載頁面**：前往本專案的 [GitHub Releases](https://github.com/elvis6792/BabyCC/releases) 下載最新版本的 `BabyCC.apk`。
+* **安裝方式**：
+  1. **手機直接安裝**：在 Android 手機下載 `BabyCC.apk` 後點擊開啟，依系統提示允許「安裝未知應用程式」即可完成安裝。
+  2. **透過 ADB 安裝**（電腦連接手機並開啟 USB 偵錯）：
+     ```bash
+     adb install -r BabyCC.apk
+     ```
+
+---
+
+### 2. 從原始碼編譯 Android App
 
 使用 Android Studio 開啟本專案根目錄，或使用 Gradle 命令行建置：
 
@@ -58,7 +71,7 @@ BabyCC/
 
 ---
 
-### 2. Python 訓練與評估環境配置
+### 3. Python 訓練與評估環境配置
 
 環境需求：Python 3.10+，PyTorch，librosa，onnxruntime
 
